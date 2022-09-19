@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  text-align: center;
+}
+
+.slider {
+  list-style: none;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider li {
+  position: absolute;
+  top: 20%;
+  opacity: 0;
+  background: #fff;
+  transition: opacity 0.5s;
+}
+
+.slider li img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.slider li:first-child {
+  opacity: 1;
+}
+
+.slider li:target {
+  opacity: 1; /*mostramos la que le hemos dado clic */
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  list-style: none;
+}
+
+.menu li .img {
+  width: 100px;
+  height: 60px;
+}
+
+.reference {
+  position: relative;
+}
